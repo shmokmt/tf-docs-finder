@@ -14,6 +14,6 @@ go install github.com/shmokmt/tf-docs-finder/cmd/tf-docs-finder@latest
 tf-docs-finder
 ```
 
-## Terrafomr Provider
+## Terraform Provider
 
 At present, it only supports the resource block of the AWS provider（latest version）.
