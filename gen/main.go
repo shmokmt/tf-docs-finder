@@ -5,7 +5,6 @@ import (
 	"context"
 	"fmt"
 	"go/format"
-	"log"
 	"os"
 	"strings"
 
@@ -13,9 +12,10 @@ import (
 	"golang.org/x/oauth2"
 )
 
-func normalizeResourceName(fileName string) string {
-	ret := strings.TrimSuffix(fileName, ".html.markdown")
-	return "aws_" + strings.TrimSuffix(ret, ".markdown")
+func normalize(path string) string {
+	path = strings.TrimPrefix(path, "website/docs/r/")
+	path = strings.TrimSuffix(path, ".html.markdown")
+	return "aws_" + strings.TrimSuffix(path, ".markdown")
 }
 
 func main() {
@@ -27,16 +27,20 @@ func main() {
 
 	client := github.NewClient(tc)
 
-	opt := &github.RepositoryContentGetOptions{}
-
 	owner := "hashicorp"
 	repo := "terraform-provider-aws"
-	path := "website/docs/r"
 
-	_, dir, _, err := client.Repositories.GetContents(ctx, owner, repo, path, opt)
+	commits, _, err := client.Repositories.ListCommits(ctx, owner, repo, &github.CommitsListOptions{})
 	if err != nil {
 		fmt.Println(err)
-		return
+		os.Exit(1)
+	}
+	commitSHA := *commits[0].SHA
+
+	tree, _, err := client.Git.GetTree(ctx, owner, repo, commitSHA, true)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
 	}
 
 	var buf bytes.Buffer
@@ -44,21 +48,32 @@ func main() {
 	buf.WriteString("\n\npackage tfdocsfinder")
 	buf.WriteString("\nvar AwsResources = []string{")
 
-	for _, f := range dir {
-		name := normalizeResourceName(f.GetName())
-		buf.WriteString("\n\t\"" + name + "\",")
+	var resourceNames []string
+	for _, entry := range tree.Entries {
+		if *entry.Type == "blob" && strings.HasPrefix(*entry.Path, "website/docs/r") {
+			name := normalize(*entry.Path)
+			resourceNames = append(resourceNames, name)
+			buf.WriteString("\n\t\"" + name + "\",")
+		}
 	}
 	buf.WriteString("\n}")
+	fmt.Println(len(resourceNames))
 
 	formatted, err := format.Source(buf.Bytes())
 	if err != nil {
-		log.Fatal(err)
+		fmt.Println(err)
+		os.Exit(1)
 	}
 	f, err := os.Create("../../aws_resources.go")
 	if err != nil {
-		log.Fatal(err)
+		fmt.Println(err)
+		os.Exit(1)
 	}
 	defer f.Close()
 
-	f.Write(formatted)
+	_, err = f.Write(formatted)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
 }
