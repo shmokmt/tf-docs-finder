@@ -26,9 +26,12 @@ func openBrowser(url string) error {
 }
 
 func main() {
-	idx, _ := fuzzyfinder.Find(tfdocsfinder.AwsResources, func(i int) string {
+	idx, err := fuzzyfinder.Find(tfdocsfinder.AwsResources, func(i int) string {
 		return tfdocsfinder.AwsResources[i]
 	})
+	if err != nil {
+		os.Exit(1)
+	}
 	fmt.Println(tfdocsfinder.AwsResources[idx])
 	url := fmt.Sprintf("https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/%s", strings.TrimPrefix(tfdocsfinder.AwsResources[idx], "aws_"))
 	if err := openBrowser(url); err != nil {
