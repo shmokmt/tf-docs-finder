@@ -16,6 +16,7 @@ import (
 var camelCaseMap = map[string]string{
 	"aws":    "Aws",
 	"github": "GitHub",
+	"google": "Google",
 }
 
 type generator struct {
@@ -106,6 +107,14 @@ var providers = []*provider{
 		repo: &repository{
 			name:          "terraform-provider-github",
 			owner:         "integrations",
+			resourcesPath: "website/docs/r/",
+		},
+	},
+	{
+		name: "google",
+		repo: &repository{
+			name:          "terraform-provider-google",
+			owner:         "hashicorp",
 			resourcesPath: "website/docs/r/",
 		},
 	},
