@@ -155,6 +155,7 @@ var AwsResources = []string{
 	"aws_chime_voice_connector_termination",
 	"aws_chime_voice_connector_termination_credentials",
 	"aws_chimesdkmediapipelines_media_insights_pipeline_configuration",
+	"aws_chimesdkvoice_global_settings",
 	"aws_chimesdkvoice_voice_profile_domain",
 	"aws_cloud9_environment_ec2",
 	"aws_cloud9_environment_membership",
