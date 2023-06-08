@@ -16,6 +16,7 @@ func main() {
 		Commands: []*cli.Command{
 			cmds.AwsCommand,
 			cmds.GitHubCommand,
+			cmds.GoogleCommand,
 		},
 	}
 	if err := app.Run(os.Args); err != nil {
