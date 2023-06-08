@@ -28,7 +28,7 @@ Other providers have the same interface as well.
 
 ## Terraform Provider
 
-Avaiable following providers:
+Available following providers:
 
 - [hashicorp/google](https://registry.terraform.io/providers/hashicorp/google/latest/docs)
 - [hashicorp/aws](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
