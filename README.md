@@ -16,4 +16,4 @@ tf-docs-finder
 
 ## Terraform Provider
 
-At present, it only supports the resource block of the AWS provider（latest version）.
+At present, it only supports the resource block of the AWS provider & GitHub Provider（latest version）.

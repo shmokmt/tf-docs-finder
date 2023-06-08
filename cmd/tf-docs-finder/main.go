@@ -15,6 +15,7 @@ func main() {
 		Usage: "tf-docs-finder",
 		Commands: []*cli.Command{
 			cmds.AwsCommand,
+			cmds.GitHubCommand,
 		},
 	}
 	if err := app.Run(os.Args); err != nil {
