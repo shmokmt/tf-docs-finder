@@ -174,6 +174,7 @@ var GoogleResources = []string{
 	"google_compute_network",
 	"google_compute_network_endpoint",
 	"google_compute_network_endpoint_group",
+	"google_compute_network_endpoints",
 	"google_compute_network_firewall_policy",
 	"google_compute_network_firewall_policy_association",
 	"google_compute_network_firewall_policy_rule",
