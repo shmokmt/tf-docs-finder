@@ -62,5 +62,6 @@ var GitHubDataSources = []string{
 	"github_team",
 	"github_tree",
 	"github_user",
+	"github_user_external_identity",
 	"github_users",
 }
