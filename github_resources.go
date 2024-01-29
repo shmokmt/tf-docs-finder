@@ -33,6 +33,7 @@ var GitHubResources = []string{
 	"github_enterprise_organization",
 	"github_issue",
 	"github_issue_label",
+	"github_issue_labels",
 	"github_membership",
 	"github_organization_block",
 	"github_organization_custom_role",
