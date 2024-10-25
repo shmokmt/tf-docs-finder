@@ -36,7 +36,6 @@ var GitHubCommand = &cli.Command{
 		if err != nil {
 			return nil
 		}
-		fmt.Println(list[idx])
 		url := fmt.Sprintf("https://registry.terraform.io/providers/integrations/github/latest/docs/%s/%s", tfType, strings.TrimPrefix(list[idx], "github_"))
 		if err := openBrowser(url); err != nil {
 			return cli.Exit(err, 1)
