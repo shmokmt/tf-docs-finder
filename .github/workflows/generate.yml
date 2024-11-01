@@ -1,52 +1,45 @@
 name: generate
-
 on:
   workflow_dispatch:
   schedule:
-         # ┌───────────── minute (0 - 59)
-	 # │ ┌───────────── hour (0 - 23)
-	 # │ │ ┌───────────── day of the month (1 - 31)
-	 # │ │ │ ┌───────────── month (1 - 12)
-	 # │ │ │ │ ┌───────────── day of the week (0 - 6) (Sunday to Saturday)
-	 # │ │ │ │ │                                   OR sun, mon, tue, wed, thu, fri, sat
-	 # │ │ │ │ │
-	 # │ │ │ │ │
-  - cron: '0 1 * * 1'
-
+    # ┌───────────── minute (0 - 59)
+    # │ ┌───────────── hour (0 - 23)
+    # │ │ ┌───────────── day of the month (1 - 31)
+    # │ │ │ ┌───────────── month (1 - 12)
+    # │ │ │ │ ┌───────────── day of the week (0 - 6) (Sunday to Saturday)
+    # │ │ │ │ │                                   OR sun, mon, tue, wed, thu, fri, sat
+    # │ │ │ │ │
+    # │ │ │ │ │
+    - cron: '0 1 * * 1'
 permissions:
   contents: write
   pull-requests: write
-
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-
-    - uses: actions/setup-go@v5
-      with:
-        go-version-file: 'go.mod'
-
-    - name: Go generate
-      run: go generate ./...
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
-
-    - name: Check changes
-      id: diff-check
-      run: git diff --exit-code || echo "changes_detected=true" >> $GITHUB_OUTPUT
-
-    - name: Commit changes
-      if: steps.diff-check.outputs.changes_detected == 'true'
-      run: |
-        echo steps.diff-check.outputs.changes_detected: ${{ steps.diff-check.outputs.changes_detected }}
-        branch_name=tf_docs_finder_$(date +"%Y%m%d%H%M")
-        git switch -c ${branch_name}
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --global user.name "github-actions[bot]"
-        git add .
-        git diff --cached --exit-code || (git commit -m "updated-$(date +"%Y%m%d") by tf-docs-finder" && git push origin ${branch_name})
-        gh pr create --base main --head ${branch_name} --title "update resources and data sources by tf-docs-finder" --body ""
-      env:
-        GH_TOKEN: ${{ github.token }}
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: 'go.mod'
+      - name: Go generate
+        run: go generate ./...
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Check changes
+        id: diff-check
+        run: git diff --exit-code || echo "changes_detected=true" >> $GITHUB_OUTPUT
+      - name: Commit changes
+        if: steps.diff-check.outputs.changes_detected == 'true'
+        run: |
+          echo steps.diff-check.outputs.changes_detected: ${{ steps.diff-check.outputs.changes_detected }}
+          branch_name=tf_docs_finder_$(date +"%Y%m%d%H%M")
+          git switch -c ${branch_name}
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add .
+          git diff --cached --exit-code || (git commit -m "updated-$(date +"%Y%m%d") by tf-docs-finder" && git push origin ${branch_name})
+          gh pr create --base main --head ${branch_name} --title "update resources and data sources by tf-docs-finder" --body ""
+        env:
+          GH_TOKEN: ${{ github.token }}
