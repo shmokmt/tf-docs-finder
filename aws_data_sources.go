@@ -521,6 +521,7 @@ var AwsDataSources = []string{
 	"aws_signer_signing_job",
 	"aws_signer_signing_profile",
 	"aws_sns_topic",
+	"aws_spot_datafeed_subscription",
 	"aws_sqs_queue",
 	"aws_sqs_queues",
 	"aws_ssm_document",
