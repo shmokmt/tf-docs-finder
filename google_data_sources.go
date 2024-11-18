@@ -6,6 +6,7 @@ var GoogleDataSources = []string{
 	"google_access_approval_folder_service_account",
 	"google_access_approval_organization_service_account",
 	"google_access_approval_project_service_account",
+	"google_access_context_manager_access_policy",
 	"google_access_context_manager_access_policy_iam_policy",
 	"google_active_folder",
 	"google_alloydb_locations",
