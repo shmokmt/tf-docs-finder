@@ -493,6 +493,8 @@ var GoogleResources = []string{
 	"google_healthcare_workspace",
 	"google_iam_access_boundary_policy",
 	"google_iam_deny_policy",
+	"google_iam_folders_policy_binding",
+	"google_iam_organizations_policy_binding",
 	"google_iam_principal_access_boundary_policy",
 	"google_iam_workforce_pool",
 	"google_iam_workforce_pool_provider",
