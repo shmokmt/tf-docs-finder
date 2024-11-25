@@ -1018,6 +1018,7 @@ var AwsResources = []string{
 	"aws_rds_custom_db_engine_version",
 	"aws_rds_export_task",
 	"aws_rds_global_cluster",
+	"aws_rds_instance_state",
 	"aws_rds_integration",
 	"aws_rds_reserved_instance",
 	"aws_redshift_authentication_profile",
