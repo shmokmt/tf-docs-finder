@@ -24,6 +24,7 @@ var GoogleDataSources = []string{
 	"google_artifact_registry_repository",
 	"google_artifact_registry_repository_iam_policy",
 	"google_backup_dr_backup_plan_association",
+	"google_backup_dr_backup_vault",
 	"google_backup_dr_management_server",
 	"google_beyondcorp_app_connection",
 	"google_beyondcorp_app_connector",
