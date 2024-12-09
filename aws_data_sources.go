@@ -503,6 +503,7 @@ var AwsDataSources = []string{
 	"aws_servicecatalog_product",
 	"aws_servicecatalog_provisioning_artifacts",
 	"aws_servicecatalogappregistry_application",
+	"aws_servicecatalogappregistry_attribute_group",
 	"aws_servicequotas_service",
 	"aws_servicequotas_service_quota",
 	"aws_servicequotas_templates",
