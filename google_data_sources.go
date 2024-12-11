@@ -181,6 +181,7 @@ var GoogleDataSources = []string{
 	"google_folder_iam_policy",
 	"google_folder_organization_policy",
 	"google_folders",
+	"google_gemini_repository_group_iam_policy",
 	"google_gke_backup_backup_plan_iam_policy",
 	"google_gke_backup_restore_plan_iam_policy",
 	"google_gke_hub_feature_iam_policy",
