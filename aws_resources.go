@@ -239,6 +239,7 @@ var AwsResources = []string{
 	"aws_cloudwatch_log_destination",
 	"aws_cloudwatch_log_destination_policy",
 	"aws_cloudwatch_log_group",
+	"aws_cloudwatch_log_index_policy",
 	"aws_cloudwatch_log_metric_filter",
 	"aws_cloudwatch_log_resource_policy",
 	"aws_cloudwatch_log_stream",
