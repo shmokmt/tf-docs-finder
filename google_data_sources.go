@@ -212,6 +212,7 @@ var GoogleDataSources = []string{
 	"google_iap_web_region_backend_service_iam_policy",
 	"google_iap_web_type_app_engine_iam_policy",
 	"google_iap_web_type_compute_iam_policy",
+	"google_kms_autokey_config",
 	"google_kms_crypto_key",
 	"google_kms_crypto_key_iam_policy",
 	"google_kms_crypto_key_latest_version",

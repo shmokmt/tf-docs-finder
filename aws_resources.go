@@ -190,6 +190,7 @@ var AwsResources = []string{
 	"aws_chimesdkvoice_voice_profile_domain",
 	"aws_cleanrooms_collaboration",
 	"aws_cleanrooms_configured_table",
+	"aws_cleanrooms_membership",
 	"aws_cloud9_environment_ec2",
 	"aws_cloud9_environment_membership",
 	"aws_cloudcontrolapi_resource",
