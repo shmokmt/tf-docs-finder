@@ -125,6 +125,7 @@ var GoogleResources = []string{
 	"google_certificate_manager_certificate_map_entry",
 	"google_certificate_manager_dns_authorization",
 	"google_certificate_manager_trust_config",
+	"google_chronicle_watchlist",
 	"google_cloud_asset_folder_feed",
 	"google_cloud_asset_organization_feed",
 	"google_cloud_asset_project_feed",
