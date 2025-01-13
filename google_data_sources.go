@@ -253,6 +253,7 @@ var GoogleDataSources = []string{
 	"google_oracle_database_db_servers",
 	"google_organization",
 	"google_organization_iam_policy",
+	"google_parameter_manager_regional_parameter",
 	"google_privateca_ca_pool_iam_policy",
 	"google_privateca_certificate_authority",
 	"google_privateca_certificate_template_iam_policy",

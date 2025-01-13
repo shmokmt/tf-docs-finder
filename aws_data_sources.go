@@ -458,6 +458,7 @@ var AwsDataSources = []string{
 	"aws_resourcegroupstaggingapi_resources",
 	"aws_route",
 	"aws_route53_delegation_set",
+	"aws_route53_records",
 	"aws_route53_resolver_endpoint",
 	"aws_route53_resolver_firewall_config",
 	"aws_route53_resolver_firewall_domain_list",
