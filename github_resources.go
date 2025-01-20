@@ -51,6 +51,7 @@ var GitHubResources = []string{
 	"github_repository_autolink_reference",
 	"github_repository_collaborator",
 	"github_repository_collaborators",
+	"github_repository_custom_property",
 	"github_repository_dependabot_security_updates",
 	"github_repository_deploy_key",
 	"github_repository_deployment_branch_policy",
