@@ -265,6 +265,7 @@ var GoogleDataSources = []string{
 	"google_parameter_manager_parameters",
 	"google_parameter_manager_regional_parameter",
 	"google_parameter_manager_regional_parameter_version",
+	"google_parameter_manager_regional_parameter_version_render",
 	"google_parameter_manager_regional_parameters",
 	"google_privateca_ca_pool_iam_policy",
 	"google_privateca_certificate_authority",
