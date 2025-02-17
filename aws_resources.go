@@ -225,6 +225,7 @@ var AwsResources = []string{
 	"aws_cloudtrail_event_data_store",
 	"aws_cloudtrail_organization_delegated_admin_account",
 	"aws_cloudwatch_composite_alarm",
+	"aws_cloudwatch_contributor_insight_rule",
 	"aws_cloudwatch_dashboard",
 	"aws_cloudwatch_event_api_destination",
 	"aws_cloudwatch_event_archive",
