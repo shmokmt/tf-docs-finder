@@ -82,6 +82,7 @@ var AwsDataSources = []string{
 	"aws_cloudfront_response_headers_policy",
 	"aws_cloudhsm_v2_cluster",
 	"aws_cloudtrail_service_account",
+	"aws_cloudwatch_contributor_managed_insight_rules",
 	"aws_cloudwatch_event_bus",
 	"aws_cloudwatch_event_buses",
 	"aws_cloudwatch_event_connection",
