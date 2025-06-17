@@ -22,6 +22,18 @@ jobs:
       - name: Check changes
         id: diff-check
         run: git diff --exit-code || echo "changes_detected=true" >> $GITHUB_OUTPUT
+      - name: Close existing PRs
+        if: steps.diff-check.outputs.changes_detected == 'true'
+        run: |
+          # Close all open PRs created by github-actions[bot] with the same title pattern
+          gh pr list --author "github-actions[bot]" --state open --json number,title | \
+          jq -r '.[] | select(.title | startswith("update resources and data sources by tf-docs-finder")) | .number' | \
+          while read pr_number; do
+            echo "Closing PR #${pr_number}"
+            gh pr close ${pr_number} --comment "Closing outdated PR - new update available"
+          done
+        env:
+          GH_TOKEN: ${{ github.token }}
       - name: Commit changes
         if: steps.diff-check.outputs.changes_detected == 'true'
         run: |
