@@ -3,6 +3,7 @@
 package tfdocsfinder
 
 var AwsDataSources = []string{
+	"aws_account_primary_contact",
 	"aws_acm_certificate",
 	"aws_acmpca_certificate",
 	"aws_acmpca_certificate_authority",
@@ -156,6 +157,7 @@ var AwsDataSources = []string{
 	"aws_dx_router_configuration",
 	"aws_dynamodb_table",
 	"aws_dynamodb_table_item",
+	"aws_dynamodb_tables",
 	"aws_ebs_default_kms_key",
 	"aws_ebs_encryption_by_default",
 	"aws_ebs_snapshot",
@@ -248,6 +250,7 @@ var AwsDataSources = []string{
 	"aws_emr_release_labels",
 	"aws_emr_supported_instance_types",
 	"aws_emrcontainers_virtual_cluster",
+	"aws_fis_experiment_templates",
 	"aws_fsx_ontap_file_system",
 	"aws_fsx_ontap_storage_virtual_machine",
 	"aws_fsx_ontap_storage_virtual_machines",
@@ -568,6 +571,7 @@ var AwsDataSources = []string{
 	"aws_vpc",
 	"aws_vpc_dhcp_options",
 	"aws_vpc_endpoint",
+	"aws_vpc_endpoint_associations",
 	"aws_vpc_endpoint_service",
 	"aws_vpc_ipam",
 	"aws_vpc_ipam_pool",
