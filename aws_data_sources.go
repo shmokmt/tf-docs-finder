@@ -456,7 +456,6 @@ var AwsDataSources = []string{
 	"aws_redshift_data_shares",
 	"aws_redshift_orderable_cluster",
 	"aws_redshift_producer_data_shares",
-	"aws_redshift_service_account",
 	"aws_redshift_subnet_group",
 	"aws_redshiftserverless_credentials",
 	"aws_redshiftserverless_namespace",
