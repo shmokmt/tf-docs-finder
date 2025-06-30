@@ -309,6 +309,7 @@ var GoogleDataSources = []string{
 	"google_pubsub_subscription_iam_policy",
 	"google_pubsub_topic",
 	"google_pubsub_topic_iam_policy",
+	"google_redis_cluster",
 	"google_redis_instance",
 	"google_runtimeconfig_config",
 	"google_runtimeconfig_config_iam_policy",
