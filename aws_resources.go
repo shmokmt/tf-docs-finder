@@ -1002,6 +1002,7 @@ var AwsResources = []string{
 	"aws_pipes_pipe",
 	"aws_placement_group",
 	"aws_prometheus_alert_manager_definition",
+	"aws_prometheus_query_logging_configuration",
 	"aws_prometheus_rule_group_namespace",
 	"aws_prometheus_scraper",
 	"aws_prometheus_workspace",
