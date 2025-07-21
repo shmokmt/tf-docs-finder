@@ -482,6 +482,7 @@ var AwsDataSources = []string{
 	"aws_route53profiles_profiles",
 	"aws_route_table",
 	"aws_route_tables",
+	"aws_s3_access_point",
 	"aws_s3_account_public_access_block",
 	"aws_s3_bucket",
 	"aws_s3_bucket_object",
