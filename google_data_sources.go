@@ -364,6 +364,7 @@ var GoogleDataSources = []string{
 	"google_storage_control_folder_intelligence_config",
 	"google_storage_control_organization_intelligence_config",
 	"google_storage_control_project_intelligence_config",
+	"google_storage_insights_dataset_config",
 	"google_storage_object_signed_url",
 	"google_storage_project_service_account",
 	"google_storage_transfer_project_service_account",
