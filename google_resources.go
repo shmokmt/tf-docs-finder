@@ -621,6 +621,7 @@ var GoogleResources = []string{
 	"google_iap_tunnel_instance_iam",
 	"google_iap_web_backend_service_iam",
 	"google_iap_web_cloud_run_service_iam",
+	"google_iap_web_forwarding_rule_service_iam",
 	"google_iap_web_iam",
 	"google_iap_web_region_backend_service_iam",
 	"google_iap_web_region_forwarding_rule_service_iam",
