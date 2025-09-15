@@ -342,6 +342,7 @@ var AwsResources = []string{
 	"aws_connect_user_hierarchy_group",
 	"aws_connect_user_hierarchy_structure",
 	"aws_connect_vocabulary",
+	"aws_controltower_baseline",
 	"aws_controltower_control",
 	"aws_controltower_landing_zone",
 	"aws_costoptimizationhub_enrollment_status",
