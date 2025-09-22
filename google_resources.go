@@ -754,6 +754,7 @@ var GoogleResources = []string{
 	"google_network_services_service_lb_policies",
 	"google_network_services_tcp_route",
 	"google_network_services_tls_route",
+	"google_network_services_wasm_plugin",
 	"google_notebooks_environment",
 	"google_notebooks_instance",
 	"google_notebooks_instance_iam",

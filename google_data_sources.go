@@ -129,6 +129,8 @@ var GoogleDataSources = []string{
 	"google_compute_instance_template",
 	"google_compute_instance_template_iam_policy",
 	"google_compute_instant_snapshot_iam_policy",
+	"google_compute_interconnect_location",
+	"google_compute_interconnect_locations",
 	"google_compute_lb_ip_ranges",
 	"google_compute_machine_image_iam_policy",
 	"google_compute_machine_types",
