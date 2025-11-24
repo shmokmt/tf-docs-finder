@@ -3,6 +3,7 @@
 package tfdocsfinder
 
 var GitHubDataSources = []string{
+	"github_actions_environment_public_key",
 	"github_actions_environment_secrets",
 	"github_actions_environment_variables",
 	"github_actions_organization_oidc_subject_claim_customization_template",
@@ -36,9 +37,17 @@ var GitHubDataSources = []string{
 	"github_issue_labels",
 	"github_membership",
 	"github_organization",
+	"github_organization_custom_properties",
 	"github_organization_custom_role",
 	"github_organization_external_identities",
 	"github_organization_ip_allow_list",
+	"github_organization_repository_role",
+	"github_organization_repository_roles",
+	"github_organization_role",
+	"github_organization_role_teams",
+	"github_organization_role_users",
+	"github_organization_roles",
+	"github_organization_security_managers",
 	"github_organization_team_sync_groups",
 	"github_organization_teams",
 	"github_organization_webhooks",
