@@ -216,6 +216,7 @@ var AwsDataSources = []string{
 	"aws_ecr_repository",
 	"aws_ecr_repository_creation_template",
 	"aws_ecrpublic_authorization_token",
+	"aws_ecrpublic_images",
 	"aws_ecs_cluster",
 	"aws_ecs_clusters",
 	"aws_ecs_container_definition",
