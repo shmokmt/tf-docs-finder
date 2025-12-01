@@ -60,6 +60,7 @@ var GitHubDataSources = []string{
 	"github_repository_custom_properties",
 	"github_repository_deploy_keys",
 	"github_repository_deployment_branch_policies",
+	"github_repository_environment_deployment_policies",
 	"github_repository_environments",
 	"github_repository_file",
 	"github_repository_milestone",
