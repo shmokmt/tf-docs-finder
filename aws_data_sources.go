@@ -430,6 +430,7 @@ var AwsDataSources = []string{
 	"aws_opensearchserverless_security_config",
 	"aws_opensearchserverless_security_policy",
 	"aws_opensearchserverless_vpc_endpoint",
+	"aws_organizations_account",
 	"aws_organizations_delegated_administrators",
 	"aws_organizations_delegated_services",
 	"aws_organizations_organization",

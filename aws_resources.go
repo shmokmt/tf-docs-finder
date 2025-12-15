@@ -713,6 +713,7 @@ var AwsResources = []string{
 	"aws_iam_instance_profile",
 	"aws_iam_openid_connect_provider",
 	"aws_iam_organizations_features",
+	"aws_iam_outbound_web_identity_federation",
 	"aws_iam_policy",
 	"aws_iam_policy_attachment",
 	"aws_iam_role",
