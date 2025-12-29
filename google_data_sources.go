@@ -53,6 +53,7 @@ var GoogleDataSources = []string{
 	"google_beyondcorp_security_gateway",
 	"google_beyondcorp_security_gateway_application_iam_policy",
 	"google_beyondcorp_security_gateway_iam_policy",
+	"google_biglake_iceberg_catalog_iam_policy",
 	"google_bigquery_analytics_hub_data_exchange_iam_policy",
 	"google_bigquery_analytics_hub_listing_iam_policy",
 	"google_bigquery_connection_iam_policy",
