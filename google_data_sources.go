@@ -166,6 +166,7 @@ var GoogleDataSources = []string{
 	"google_compute_router",
 	"google_compute_router_nat",
 	"google_compute_router_status",
+	"google_compute_routers",
 	"google_compute_security_policy",
 	"google_compute_snapshot",
 	"google_compute_snapshot_iam_policy",
