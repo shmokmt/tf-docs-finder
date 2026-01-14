@@ -96,6 +96,7 @@ var GoogleResources = []string{
 	"google_backup_dr_backup_plan_association",
 	"google_backup_dr_backup_vault",
 	"google_backup_dr_management_server",
+	"google_backup_dr_restore_workload",
 	"google_backup_dr_service_config",
 	"google_beyondcorp_app_connection",
 	"google_beyondcorp_app_connector",
