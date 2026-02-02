@@ -418,6 +418,7 @@ var GoogleDataSources = []string{
 	"google_vertex_ai_featurestore_entitytype_iam_policy",
 	"google_vertex_ai_featurestore_iam_policy",
 	"google_vmwareengine_cluster",
+	"google_vmwareengine_datastore_html",
 	"google_vmwareengine_external_access_rule",
 	"google_vmwareengine_external_address",
 	"google_vmwareengine_network",

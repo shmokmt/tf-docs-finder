@@ -12,6 +12,7 @@ var GitHubResources = []string{
 	"github_actions_organization_secret_repositories",
 	"github_actions_organization_secret_repository",
 	"github_actions_organization_variable",
+	"github_actions_organization_workflow_permissions",
 	"github_actions_repository_access_level",
 	"github_actions_repository_oidc_subject_claim_customization_template",
 	"github_actions_repository_permissions",

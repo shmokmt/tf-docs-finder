@@ -53,6 +53,7 @@ var GitHubDataSources = []string{
 	"github_organization_webhooks",
 	"github_ref",
 	"github_release",
+	"github_release_asset",
 	"github_repositories",
 	"github_repository",
 	"github_repository_autolink_references",
