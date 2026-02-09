@@ -829,6 +829,7 @@ var GoogleResources = []string{
 	"google_oracle_database_cloud_exadata_infrastructure",
 	"google_oracle_database_cloud_vm_cluster",
 	"google_oracle_database_db_system",
+	"google_oracle_database_exadb_vm_cluster",
 	"google_oracle_database_exascale_db_storage_vault",
 	"google_oracle_database_odb_network",
 	"google_oracle_database_odb_subnet",
