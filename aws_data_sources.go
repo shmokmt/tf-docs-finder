@@ -4,6 +4,7 @@ package tfdocsfinder
 
 var AwsDataSources = []string{
 	"aws_account_primary_contact",
+	"aws_account_regions",
 	"aws_acm_certificate",
 	"aws_acmpca_certificate",
 	"aws_acmpca_certificate_authority",
