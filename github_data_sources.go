@@ -37,6 +37,7 @@ var GitHubDataSources = []string{
 	"github_issue_labels",
 	"github_membership",
 	"github_organization",
+	"github_organization_app_installations",
 	"github_organization_custom_properties",
 	"github_organization_custom_role",
 	"github_organization_external_identities",
