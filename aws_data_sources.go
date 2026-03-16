@@ -281,6 +281,7 @@ var AwsDataSources = []string{
 	"aws_iam_instance_profile",
 	"aws_iam_instance_profiles",
 	"aws_iam_openid_connect_provider",
+	"aws_iam_outbound_web_identity_federation",
 	"aws_iam_policy",
 	"aws_iam_policy_document",
 	"aws_iam_principal_policy_simulation",
