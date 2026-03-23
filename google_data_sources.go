@@ -150,6 +150,7 @@ var GoogleDataSources = []string{
 	"google_compute_network",
 	"google_compute_network_attachment",
 	"google_compute_network_endpoint_group",
+	"google_compute_network_endpoint_groups",
 	"google_compute_network_peering",
 	"google_compute_networks",
 	"google_compute_node_types",

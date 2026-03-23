@@ -384,6 +384,7 @@ var AwsDataSources = []string{
 	"aws_msk_cluster",
 	"aws_msk_configuration",
 	"aws_msk_kafka_version",
+	"aws_msk_topic",
 	"aws_msk_vpc_connection",
 	"aws_mskconnect_connector",
 	"aws_mskconnect_custom_plugin",
