@@ -314,6 +314,7 @@ var GoogleDataSources = []string{
 	"google_network_management_connectivity_test_run",
 	"google_network_management_connectivity_tests",
 	"google_network_security_address_group_iam_policy",
+	"google_network_security_address_groups",
 	"google_notebooks_instance_iam_policy",
 	"google_notebooks_runtime_iam_policy",
 	"google_observability_folder_settings",
