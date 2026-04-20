@@ -577,6 +577,7 @@ var GoogleResources = []string{
 	"google_firebase_hosting_version",
 	"google_firebase_project",
 	"google_firebase_storage_bucket",
+	"google_firebase_storage_default_bucket",
 	"google_firebase_web_app",
 	"google_firebaserules_release",
 	"google_firebaserules_ruleset",

@@ -231,6 +231,7 @@ var GoogleDataSources = []string{
 	"google_endpoints_service_consumers_iam_policy",
 	"google_endpoints_service_iam_policy",
 	"google_filestore_instance",
+	"google_firebase_admin_sdk_config",
 	"google_firebase_android_app",
 	"google_firebase_android_app_config",
 	"google_firebase_apple_app",
