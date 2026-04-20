@@ -195,6 +195,8 @@ var AwsDataSources = []string{
 	"aws_ec2_public_ipv4_pool",
 	"aws_ec2_public_ipv4_pools",
 	"aws_ec2_serial_console_access",
+	"aws_ec2_service_link_virtual_interface",
+	"aws_ec2_service_link_virtual_interfaces",
 	"aws_ec2_spot_price",
 	"aws_ec2_transit_gateway",
 	"aws_ec2_transit_gateway_attachment",
