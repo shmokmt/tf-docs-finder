@@ -66,6 +66,7 @@ var GitHubDataSources = []string{
 	"github_repository_environments",
 	"github_repository_file",
 	"github_repository_milestone",
+	"github_repository_pages",
 	"github_repository_pull_request",
 	"github_repository_pull_requests",
 	"github_repository_teams",
