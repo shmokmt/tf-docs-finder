@@ -74,6 +74,7 @@ var GitHubResources = []string{
 	"github_repository_environment_deployment_policy",
 	"github_repository_file",
 	"github_repository_milestone",
+	"github_repository_pages",
 	"github_repository_project",
 	"github_repository_pull_request",
 	"github_repository_ruleset",
