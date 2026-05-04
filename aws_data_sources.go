@@ -550,6 +550,8 @@ var AwsDataSources = []string{
 	"aws_secretsmanager_secrets",
 	"aws_security_group",
 	"aws_security_groups",
+	"aws_securityhub_enabled_standards",
+	"aws_securityhub_security_controls",
 	"aws_securityhub_standards_control_associations",
 	"aws_serverlessapplicationrepository_application",
 	"aws_service",
